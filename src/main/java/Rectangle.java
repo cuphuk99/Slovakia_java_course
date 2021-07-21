@@ -1,0 +1,52 @@
+/*
+ * @author Vlad Ishtukin
+ * @project MaveanNew
+ * @class Rectangle
+ * @version 1.0.0
+ * @since 15.07.2021 - 10.39
+ */
+
+public class Rectangle {
+    private int length;
+    private int width;
+
+    public Rectangle() {
+    }
+
+    public Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getArea(){
+        return this.getLength()*this.getWidth();
+    }
+
+    public int getPerimeter(){
+        return (this.getLength()+this.getWidth())*2;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                '}';
+    }
+}
